@@ -4,7 +4,7 @@
 	& h1, & h2, & h3, & h4, & h5, & h6 {
 		font-weight: var(--bold-font-weight);
 		line-height: 1.25;
-    margin-bottom: var(--spacing-small);
+    margin: var(--spacing-medium) 0;
   }
 
   & h1 {
@@ -39,7 +39,8 @@
 	/* Links */
 	& a {
 		color: var(--primary);
-		transition: var(--hover-transition);
+    transition: var(--hover-transition);
+    text-decoration: none;
 		&:hover {
 			background-color: var(--highlight);
 			color: var(--black);
@@ -75,7 +76,7 @@
 		counter-reset: i 0;
     & >li:before {
       font-weight: 800;
-      left: -var(--spacing-medium);
+      left: calc(-1 * var(--spacing-medium) );
       position: absolute;
       height: 100%;
       content: counter(i);

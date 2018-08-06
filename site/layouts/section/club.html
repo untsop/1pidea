@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="ph3 bg-off-white">
+	<div class="center mw6 pv3">
+
+		{{ .Content }}
+
+		<img src="{{ .Params.qrcode }}" alt="" class="db center">
+	</div>
+</div>
+
+{{ end }}
